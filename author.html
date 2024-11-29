@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .house-container img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: auto;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        
+        .image-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .image-container:hover .image-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Про автора (About me)</h1>
+    <h2 class="name">Вступ</h2>
+    <div>Стойка Василь Іванович, я студент 1-го курсу спеціальності ІПЗ</div>
+    <div>Нижче ви можете дізнатися інформацію про мене</div>
+    <ul>
+        <li>Я люблю грати в теніс і волейбол</li>
+        <li>Вивчати мови програмування</li>
+    </ul>
+    <h2>Зображення</h2>
+    <div class="image-container house-container">
+        <img src="c:/Users/ВАСЯ/Desktop/Web_basics/LAB2_HTML/Home_icon_orange.png" alt="Головна">
+        <div class="image-text">Перейти на головну сторінку</div>
+    </div> 
+    <div class="image-container">
+        <img src="c:/Users/ВАСЯ/Desktop/Web_basics/LAB2_HTML/patron.jpg" alt="Фото">
+    </div> 
+</body>
+</html>
